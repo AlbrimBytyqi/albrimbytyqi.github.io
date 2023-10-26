@@ -3,12 +3,15 @@
 <head>
 <script>
 function validateForm() {
-  let x = document.forms["myForm"]["fname"].value;
-  if (x == "") {
-    window.location.href= "mailto:mail@example.com?subject=ahhahah&body=non so"
-    // alert("Name must be filled out");
-    return false;
-  }
+    var subject = document.getElementById("oggetto").value;
+    var body = document.getElementById("messaggio").value;
+    if (subject == "") {
+        alert("mancano l'Oggetto");
+    } else if(body == ""){
+        alert("mancano il messaggio");
+    } else{
+        window.location.href= "mailto:cuccinedeccellenza@gmail.com?subject=" + subject + "&body=" + body;
+    }
 }
 </script>
 </head>
@@ -16,8 +19,9 @@ function validateForm() {
 
 <h2>JavaScript Validation</h2>
 
-<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-  Name: <input type="text" name="fname">
+<form name="myForm" action="" onsubmit="validateForm()" method="post">
+        <input type="text" id="messaggio" placeholder="messaggio">
+        <input type="text" id="oggetto" placeholder="oggetto">
   <input type="submit" value="Submit">
 </form>
 

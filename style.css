@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     background-color: #eeeeee;
@@ -44,11 +48,6 @@ body{
 
 .center h1 {
     color: pink;
-}
-
-.centraCucina{
-    align-items: center;
-    /* border: 3px solid red; */
 }
 .contenitore {
     display: flex;
@@ -105,15 +104,17 @@ body{
     display: flex;
     padding-left: 10px;
     padding-right: 10px;
+    /* border: 2px solid pink; */
+    margin: 0 10%;
+    margin-bottom: 30px;
 }
 
 .descrizioneRecensione {
     background-color: #fff;
     border: 2px solid #bbb;
-    width: 50%;
+    width: 25%;
     border-radius: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 10px auto;
     padding: 10px;
     height: fit-content;
 }
@@ -128,3 +129,43 @@ body{
 .recensioneTesto {
     height: auto;
 }
+
+/* Sezione Contatti */
+    /* Box per le Mail */
+
+.contenitoreEmail{
+    width: 100%;
+    height: auto;
+}
+
+.boxEmial{
+    width: 80%;
+    margin: 10 auto;
+    border: 2px solid #bbb;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.boxEmial .inputGrandi{
+    width: 75%;
+    display: flex;
+    margin: 20px auto;
+    padding: 4 8;
+}
+
+.bottoniAzione{
+    width: 25%;
+    /* border: 3px solid black; */
+    margin: 10 auto;
+}
+
+.boxEmial .inputPiccoli{
+    width: 49%;
+    margin: 10 auto;
+    padding: 10;
+    background-color: #5783db;
+    border-radius: 15px;
+    border-color: #bbb;
+    /* border: 3px solid red; */
+}
+

@@ -5,7 +5,8 @@
 function validateForm() {
   let x = document.forms["myForm"]["fname"].value;
   if (x == "") {
-    alert("Name must be filled out");
+    window.location.href= "mailto:mail@example.com?subject=ahhahah&body=non so"
+    // alert("Name must be filled out");
     return false;
   }
 }

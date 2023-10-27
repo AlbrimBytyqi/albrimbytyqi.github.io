@@ -1,7 +1,9 @@
 <html>
     <head>
+        <meta charset="utf-8">
         <title>Contattaci</title>
         <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" id="cookiebanner" src="script.js"></script>
         <script>
             function invioEmail() {
                 var body = document.getElementById("messaggio").value;
@@ -17,6 +19,7 @@
         </script>
     </head>
     <body>
+        <!-- MENU -->
         <div class="menu">
             <a href="index.html">Logo</a>
             <div class="menu-dx">
@@ -25,20 +28,24 @@
                 <a href="#contatti">Contattaci</a>
               </div>
         </div>
+        <!-- Header -->
         <div class="insegna">
             <div class="center">
                 <h1>Cucine d'Eccellenza</h1>
             </div>
         </div>
+        <!-- Titolo -->
         <div class="titoletto">
             <h1>
                 <a name="contatti">Contatti</a>
             </h1>
         </div>
+        <!-- Box EMail -->
         <div class="contenitoreEmail">
             <form class="boxEmial" action="" onsubmit="return invioEmail()" method="post">
-                <input type="text" class="inputGrandi" id="oggetto" placeholder="Tipo cucina? (Esempio: Moderva, Classica, Rustica, Shabby, etc...)">
-                <textarea class="textareaGrandi" id="messaggio" placeholder="Spiegaci le caratteristiche della cucina"></textarea>
+                <!-- Sovrascrivo lo Stile -->
+                <input type="text" class="inputGrandi" id="oggetto" placeholder="Tipo cucina? (Esempio: Moderva, Classica, Rustica, Shabby, etc...)" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                <textarea class="textareaGrandi" id="messaggio" placeholder="Spiegaci le caratteristiche della cucina" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"></textarea>
                 <div class="bottoniAzione">
                     <input type="submit" class="inputPiccoli" id="" value="Invia">
                     <input type="reset" class="inputPiccoli" value="Cancella">

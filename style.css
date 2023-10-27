@@ -147,6 +147,7 @@ body{
 }
 
 .boxEmial .inputGrandi{
+    font-size: 14px;
     width: 75%;
     display: flex;
     margin: 20px auto;
@@ -155,6 +156,7 @@ body{
 
 .boxEmial .textareaGrandi{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
     width: 75%;
     max-width: 75%;
     min-width: 75%;
@@ -179,11 +181,11 @@ body{
     border-color: #adadad;
     border: none;
     color: #fff;
-    cursor: pointer;
     /* border: 3px solid red; */
 }
 
 .boxEmial .inputPiccoli:hover{
     background-color: #568cfa;
+    cursor: pointer;
 }
 

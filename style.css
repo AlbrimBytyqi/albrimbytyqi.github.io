@@ -153,19 +153,37 @@ body{
     padding: 4 8;
 }
 
+.boxEmial .textareaGrandi{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 75%;
+    max-width: 75%;
+    min-width: 75%;
+    height: 90px;
+    display: flex;
+    margin: 20px auto;
+    padding: 4 8;
+}
+
 .bottoniAzione{
-    width: 25%;
+    width: 300px;
     /* border: 3px solid black; */
     margin: 10 auto;
 }
 
 .boxEmial .inputPiccoli{
     width: 49%;
-    margin: 10 auto;
-    padding: 10;
-    background-color: #5783db;
+    margin: 20 auto;
+    padding: 10px;
+    background-color: #7ba5fa;
     border-radius: 15px;
-    border-color: #bbb;
+    border-color: #adadad;
+    border: none;
+    color: #fff;
+    cursor: pointer;
     /* border: 3px solid red; */
+}
+
+.boxEmial .inputPiccoli:hover{
+    background-color: #568cfa;
 }
 

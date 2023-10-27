@@ -2,6 +2,19 @@
     <head>
         <title>Contattaci</title>
         <link rel="stylesheet" href="style.css">
+        <script>
+            function invioEmail() {
+                var body = document.getElementById("messaggio").value;
+                var subject = document.getElementById("oggetto").value;
+                if (subject == "" || body == "") {
+                    alert("Riempi tutti i campi");
+                    return false;
+                } else {
+                    window.location.href= "mailto:cuccinedeccellenza@gmail.com?subject=" + subject + "&body=" + body;
+                    return false;
+                }
+            }
+        </script>
     </head>
     <body>
         <div class="menu">
@@ -23,19 +36,9 @@
             </h1>
         </div>
         <div class="contenitoreEmail">
-            <!-- <div class="boxEmial">
-                <label for="">La nostra Email: </label>
-                <input type="email" value="cucinedeccellenza@gmail.com" class="inputGrandi" disabled>
-                <label for="">la tua Email:</label>
-                <input type="email" class="inputGrandi">
-                <div class="bottoniAzione">
-                    <input type="button" class="inputPiccoli" id="" value="Invia">
-                    <input type="reset" class="inputPiccoli" value="Cancella">
-                </div>
-            </div> -->
-            <form action=”controllo()” class="boxEmial" >
-                <input type="email" value="cucinedeccellenza@gmail.com" class="inputGrandi" disabled>
-                <input type="Text" class="inputGrandi" placeholder="Che tipo di cucine cerchi?">
+            <form class="boxEmial" action="" onsubmit="return invioEmail()" method="post">
+                <input type="text" class="inputGrandi" id="oggetto" placeholder="Tipo cucina? (Esempio: Moderva, Classica, Rustica, Shabby, etc...)">
+                <textarea class="textareaGrandi" id="messaggio" placeholder="Spiegaci le caratteristiche della cucina"></textarea>
                 <div class="bottoniAzione">
                     <input type="submit" class="inputPiccoli" id="" value="Invia">
                     <input type="reset" class="inputPiccoli" value="Cancella">

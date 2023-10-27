@@ -3,16 +3,15 @@
 <head>
 <script>
 function validateForm() {
-  let x = document.forms["myForm"]["fname"].value;
-  if (x == "") {
     var body = document.getElementById("messaggio").value;
     var subject = document.getElementById("oggetto").value;
-    window.location.href= "mailto:cuccinedeccellenza@gmail.com?subject=" + subject + "&body=" + body;
-    return false;
-  } else {
-    alert("mancano i dati");
-    return false;
-  }
+    if (subject == "" || body == "") {
+        alert("Riempi tutti i campi");
+        return false;
+    } else {
+        window.location.href= "mailto:cuccinedeccellenza@gmail.com?subject=" + subject + "&body=" + body;
+        return false;
+    }
 }
 </script>
 </head>
@@ -21,9 +20,8 @@ function validateForm() {
 <h2>JavaScript Validation</h2>
 
 <form name="myForm" action="" onsubmit="return validateForm()" method="post">
-
-        <input type="text" id="messaggio" placeholder="messaggio">
-        <input type="text" id="oggetto" placeholder="oggetto">
+    <input type="text" id="oggetto" placeholder="oggetto">
+    <input type="text" name="messaggio" id="messaggio" placeholder="messaggio">
   <input type="submit" value="Submit">
 </form>
 

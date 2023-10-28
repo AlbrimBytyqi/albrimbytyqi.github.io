@@ -49,6 +49,11 @@ body{
 .center h1 {
     color: pink;
 }
+
+.centraCucina {
+    margin-bottom: 100px;
+}
+
 .contenitore {
     display: flex;
     width: 75%;

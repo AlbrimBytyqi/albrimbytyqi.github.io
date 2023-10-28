@@ -136,6 +136,7 @@ body{
 .contenitoreEmail{
     width: 100%;
     height: auto;
+    margin-bottom: 100px;
 }
 
 .boxEmial{
@@ -143,7 +144,7 @@ body{
     margin: 10 auto;
     border: 2px solid #bbb;
     border-radius: 30px;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .boxEmial .inputGrandi{
